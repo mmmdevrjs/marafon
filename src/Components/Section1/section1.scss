@@ -1,0 +1,42 @@
+.section1 {
+  background-color: #212121;
+  .container {
+    margin: auto;
+    .row {
+      .main {
+        .textBox {
+          padding-top: 120px;
+          padding-bottom: 40px;
+          display: flex;
+          .title {
+            max-width: 700px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 510;
+            font-size: 70px;
+            line-height: 100%;
+            color: #ffffff;
+          }
+          .text {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            display: flex;
+            align-items: flex-end;
+            color: #b7b7b7;
+          }
+        }
+        .imgBox {
+          border: 1px solid red;
+          max-width: 1200px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

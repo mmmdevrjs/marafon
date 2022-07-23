@@ -1,0 +1,66 @@
+.section4 {
+  background-color: #1a1a1a;
+  .container {
+    .row {
+      .main {
+        width: 100%;
+        .cardTitle {
+          max-width: 410px;
+          margin-top: 120px;
+          margin-bottom: 40px;
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 510;
+          font-size: 40px;
+          line-height: 110%;
+          color: #ffffff;
+        }
+        .cards {
+          width: 100%;
+          margin-bottom: 90px;
+          .cardBox {
+            border-top: 1px solid #444444;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            margin-bottom: 30px;
+            .left {
+              .title {
+                max-width: 380px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 510;
+                font-size: 20px;
+                line-height: 130%;
+                color: #ffffff;
+              }
+            }
+            .middle {
+              .text {
+                max-width: 380px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #b7b7b7;
+              }
+            }
+
+            .right {
+              .text {
+                max-width: 380px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #b7b7b7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

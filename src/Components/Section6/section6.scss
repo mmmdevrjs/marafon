@@ -1,0 +1,77 @@
+@import "./accardion.scss";
+.section6 {
+  background-color: #212121;
+  .container {
+    .row {
+      .main {
+        width: 100%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        .title {
+          padding-bottom: 40px;
+          .cardTitle {
+            max-width: 525px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 510;
+            font-size: 40px;
+            line-height: 110%;
+            color: #ffffff;
+          }
+        }
+        .content {
+          display: flex;
+          justify-content: space-between;
+
+          .left {
+            width: 100%;
+          }
+          .rightBox {
+            border-top: 3px solid #444444;
+            width: 100%;
+            max-width: 380px;
+            height: 556px;
+            background-color: #272727;
+            .container {
+              padding: 30px;
+              .titleBox {
+                .titleText {
+                  max-width: 320px;
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 510;
+                  font-size: 20px;
+                  line-height: 130%;
+                  color: #ffffff;
+                }
+              }
+              .contentBox {
+                ul {
+                  padding: 20px 0 30px 0;
+                  margin-left: 15px;
+                  li {
+                    font-family: "SF Pro Display";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 190%;
+                    color: #b7b7b7;
+                  }
+                }
+                .registration {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 21px;
+                  text-decoration-line: underline;
+                  color: #ffbd39;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

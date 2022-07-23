@@ -1,0 +1,29 @@
+@import "./Components/Navbar/navbar.scss";
+@import "./Components/Section1/section1.scss";
+@import "./Components/Section2/section2.scss";
+@import "./Components/Section3/section3.scss";
+@import "./Components/Section4/section4.scss";
+@import "./Components/Section5/section5.scss";
+@import "./Components/Section6/section6.scss";
+@import "./Components/Section7/section7.scss";
+@import "./Components/Section8/section8.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  // padding: 0 40px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
