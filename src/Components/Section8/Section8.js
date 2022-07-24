@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Icon from "../Icon/Icon";
 import Person1 from "../../assets/images/Person1.png";
 import Person2 from "../../assets/images/Person2.png";
@@ -28,6 +28,14 @@ import Person25 from "../../assets/images/Person25.png";
 import Person26 from "../../assets/images/Person26.png";
 
 export default function Section8() {
+  const [visible, setVisible] = useState(4);
+  const [btn, setBtn] = useState(true);
+
+  const showMore = () => {
+    setVisible((preValue) => preValue + 9);
+    setBtn(!btn);
+  };
+
   const cardDataLeft = [
     {
       img: Person1,
@@ -48,37 +56,37 @@ export default function Section8() {
       text: "Kurs juda yaxshi o'ylab chiqilib tuzilgan kursdagi mavzular ichida o'quvchida paydo bo'lishi mumkin bo'lgan deyarli barcha savollarga javob berilgan, undan tashqari qo'shimcha live chatlar qilindi, men o'zim tomonimdan harakat biroz kam bo'lganligi sababli hamma vazifalarni bajarolmadim lekin yana qayta urinib keyingi safar yaxshiroq harakat qilish niyatim bor.",
     },
     {
-      img: Person2,
+      img: Person4,
       name: "Omonulloxon Toshpo‘latov",
       neeck: "@omonullokhon",
       text: "Assalomu alaykum, Web Design Foundation kursdan juda amaliy va teoretik savollarimga javob topa oldim, va har bir video kurs aniq, qisqa va tiniq mehnat mahsuli de'b qo'rqasdan ayta olaman. Shuni takidlashim zarurki biz Web Design Foundation 1 mavsumi ishtirokchilari chegirma narxda kursni sotib olib tushundikki kurs o'zini narxidan ancha pasga tushirilib sotilgan uni orqasidigi mehnat kurs narxidan ziyoda. Kurs o'ziga kelsak qisqa vaqt mo'ljalangan bo'lsa ham, uni tushunishga juda qattiq e'tibor ta'lab qiladi. Shu vaqtni o'zida Admin/Ustoz Ismoil aka biz bilan 24/7 a'loqada qolib barcha texnik muamolarga javob beridilar biz 150 ziyod o'quvchi bo'lishimizga va 150 turdagi savolarllarga qaramasdan",
     },
     {
-      img: Person2,
+      img: Person5,
       name: "Ja'far Xayrullayev",
       neeck: "@khayrullayev_jafar",
       text: "Web Foundation 01 kursining eng yoqqan nuqtasi o'qitish uslubi bo'ldi. Web dizayn sohasini barcha elementlari tushunarli qilib video sifatida yuklangan. 1 oy ichida sohani o'rgana oldim. Jonli efirlar juda ham zo'r bo'ldi, feedback'lardan katta tajribalar yeg'dim. Kurs tamomila zo'r ishlangan. Ustoz, Ismoil akaga katta rahmat. Juda ham katta foyda oldim deb bemalol ayta olaman. Web-dizayn sohasini o'rganmoqchi insonga shubhasiz Socially design Academy'ni maslahat beraman.",
     },
     {
-      img: Person2,
+      img: Person6,
       name: "Umidjon Abdullayev",
       neeck: "@UA_DesignerUZ",
       text: "❇️  Web Dizayn Foundation kursi web dizayn sohasiga kirib keluvchilar uchun ajoyib kurs deb o'ylayman . Bu kursda o'qib ko'p foydali bilmlarni qo'lga kiritdim va dizayn sohasida o'z o'rnimga ega bo'ldim . Web dizayn sohasini o'rganmoqchi bo'lgan do'stlarimiz uchun   Socially Design Academiyasini tavfsiya qilaman !",
     },
     {
-      img: Person2,
+      img: Person7,
       name: "Alijon Norqulov",
       neeck: "@Alijon_Norqulov",
       text: "Web Design Foundation kursi darslari juda sodda tushuntirilgan va ajoyib.!!! Darslar mohirona ishlangan. Men bu darslardan ko'p foydali malumotlarni oldim va bunday keyingi ishlarimga poydevor bo'ladi In shaa Alloh. Darslar uchun alohida Rahmat ustoz !!!",
     },
     {
-      img: Person2,
+      img: Person8,
       name: "Diyorbek Sodiqjonov",
       neeck: "@sadikjanof",
       text: "Web dizayn foundetion kursi juda zo’r ishlangan. Endi boshlaganlar uchun juda tushunarli va birma bir to’xtalib o’tilgan. Men bu kursda o’qib figma dasturida qiyinchiliklarsiz ishlash darajasigacha yetdim va hozirda o’zim mustaqil tarzda web sahifa dizaynlarini qila olaman.Web dizaynga qiziquvchilar uchun shu vidyodarsni sotib olishni tavsiya etaman.",
     },
     {
-      img: Person2,
+      img: Person9,
       name: "Nilufar Jo‘raeva",
       neeck: "@bestgiftsuz",
       text: "Kurs juda ham foydali õqitilish uslubi ham juda ham tushunarli ishlangan menga ayniqsa foundation kursida feedbacklarga booy live chatlar kõp bõlishi yoqdi👍👍👍",
@@ -191,7 +199,7 @@ export default function Section8() {
       img: Person26,
       name: "Mohlaroyim Mustafoyeva",
       neeck: "@mustaf1_dm",
-      text: "Web Design Foundation kursi nafaqat dizayn sohasini endi boshlovchilar uchun, balki bu sohada malakaga ega mutaxassislar ham ancha foydali ko‘nikmalarga ega bo‘ladi. Bu kursda o‘qish orqali men moliyaviy hamda vaqt samaradorligiga erishdim. Kurs narxi arzon, kontent sifatli. Endilikda Web Design kursining 1-moduliga qabul boshlanishini kutyapman.",
+      text: "Web Design Foundation kursi nafaqat dizayn sohasini endi boshlovchilar uchun, balki bu sohada malakaga ega mutaxassislar ham ancha foydali ko‘nikmalarga ega bo‘ladi. Bu kursda o‘qish orqali men moliyaviy hamda vaqt samaradorligiga erishdim. Kurs narxi arzon, kontent sifatli. Endilikda Web Design kursining 1-moduliga qabul boshlanishini kutyapman. ",
       nextText1:
         "Kurs tashkilotchisi ustozim Ismoil Safarovga o'z minnatdorchiligimni bildiraman.",
     },
@@ -206,29 +214,11 @@ export default function Section8() {
                 Kursni tamomlagan o‘quvchilar fikri qanday?
               </p>
             </div>
-            <div className="bigBox">
-              <div className="leftBoxes">
-                {cardDataLeft.map((item) => (
-                  <div className="box1">
-                    <div className="line"></div>
-                    <div className="top">
-                      <div className="imgBox">
-                        <img src={item.img} alt="" />
-                      </div>
-                      <div className="namesBox">
-                        <p className="name">{item.name}</p>
-                        <span className="neeck">{item.neeck}</span>
-                      </div>
-                    </div>
-                    <div className="bottom">
-                      <p className="text">{item.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
 
+            <div className="bigBox">
+              <div className={`content ${btn ? "showBtn" : "hideBtn"}`}></div>
               <div className="leftBoxes">
-                {cardDataMiddle.map((item) => (
+                {cardDataLeft.slice(0, visible).map((item) => (
                   <div className="box1">
                     <div className="line"></div>
                     <div className="top">
@@ -247,7 +237,7 @@ export default function Section8() {
                 ))}
               </div>
               <div className="leftBoxes">
-                {cardDataRight.map((item) => (
+                {cardDataMiddle.slice(0, visible).map((item) => (
                   <div className="box1">
                     <div className="line"></div>
                     <div className="top">
@@ -261,13 +251,42 @@ export default function Section8() {
                     </div>
                     <div className="bottom">
                       <p className="text">{item.text}</p>
-                      <p className="nextText1">{item.nextText1}</p>
-                      <p className="nextText2">{item.nextText2}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="leftBoxes">
+                {cardDataRight.slice(0, visible).map((item) => (
+                  <div className="box1">
+                    <div className="line"></div>
+                    <div className="top">
+                      <div className="imgBox">
+                        <img src={item.img} alt="" />
+                      </div>
+                      <div className="namesBox">
+                        <p className="name">{item.name}</p>
+                        <span className="neeck">{item.neeck}</span>
+                      </div>
+                    </div>
+                    <div className="bottom">
+                      {item.text && <p className="text">{item.text}</p>}
+                      {item.nextText1 && (
+                        <p className="nextText1">{item.nextText1}</p>
+                      )}
+                      {item.nextText2 && (
+                        <p className="nextText2">{item.nextText2}</p>
+                      )}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+            <button
+              onClick={showMore}
+              className={`btnShow ${btn ? "showBtn" : "hideBtn"}`}
+            >
+              Ko‘proq fikrlarni o‘qish ↺
+            </button>
           </div>
         </div>
       </div>

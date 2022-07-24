@@ -30,7 +30,7 @@ export default function Navbar() {
             </div>
             <div className="profil">
               <NavLink className="accaunt" to="/">
-                Tizimga kirish →
+                Ro‘yxatdan o‘tish →
               </NavLink>
               <div className="burger">
                 <span></span>

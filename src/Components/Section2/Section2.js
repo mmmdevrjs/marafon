@@ -14,7 +14,6 @@ export default function Section2() {
                 src="https://drive.google.com/uc?export=download&id=1bw4ymrXW1g5mXOK0yC4JSMhiXhU5a2WR"
               ></video>
               <Icon.Play />
-              <Icon.Accardion />
             </div>
             <p className="titleCard">Kurs kimlar uchun?</p>
             <div className="cardBoxes">

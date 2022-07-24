@@ -1,0 +1,81 @@
+.section10 {
+  background-color: #212121;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .container {
+    .row {
+      .main {
+        width: 100%;
+        .titleBox {
+          .titleCard {
+            width: 100%;
+            padding-bottom: 40px;
+            max-width: 470px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 510;
+            font-size: 40px;
+            line-height: 110%;
+            color: #ffffff;
+          }
+        }
+        .registrationBox {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 380px 380px 380px;
+          justify-content: space-between;
+          .left {
+            border-top: 1px solid #444444;
+            padding-top: 20px;
+            .title {
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 20px;
+              line-height: 130%;
+              color: #ffbd39;
+            }
+            ul {
+              margin-left: 30px;
+              padding-top: 10px;
+              padding-bottom: 30px;
+              li {
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                color: #b7b7b7;
+              }
+              .nextLi {
+                margin: 10px 0;
+              }
+            }
+            .registrationBtn {
+              width: 100%;
+              border: none;
+              padding: 22px 0;
+              margin-left: 30px;
+              max-width: 320px;
+              border: 1px solid #ffbd39;
+              outline: none;
+              background-color: transparent;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              text-decoration-line: underline;
+              color: #ffbd39;
+              &:hover {
+                background-color: #ffbd39;
+                color: #1a1a1a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

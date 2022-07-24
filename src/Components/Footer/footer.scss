@@ -1,0 +1,71 @@
+.footer {
+  background-color: #1a1a1a;
+  // height: 116px;
+  .container {
+    .row {
+      .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      .left {
+        p {
+          padding: 40px 0;
+          width: 100%;
+          max-width: 239px;
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 110%;
+          color: #b7b7b7;
+        }
+      }
+      .middle {
+        display: flex;
+        width: 100%;
+        max-width: 315px;
+        li {
+          list-style: none;
+          a {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #ffffff;
+          }
+          .liner {
+            color: #444444;
+            font-size: 18px;
+            margin: 0 5px;
+          }
+          .nextA {
+          }
+        }
+      }
+      .right {
+        span {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #b7b7b7;
+          margin-right: 5px;
+        }
+        a {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: right;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
