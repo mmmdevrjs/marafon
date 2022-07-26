@@ -1,13 +1,14 @@
 .section1 {
   background-color: #212121;
   .container {
-    margin: auto;
+    // margin: 0;
     .row {
       .main {
         .textBox {
           padding-top: 120px;
           padding-bottom: 40px;
           display: flex;
+          justify-content: space-between;
           .title {
             max-width: 700px;
             font-family: "SF Pro Display";
@@ -18,6 +19,8 @@
             color: #ffffff;
           }
           .text {
+            width: 100%;
+            max-width: 380px;
             font-family: "SF Pro Display";
             font-style: normal;
             font-weight: 400;
@@ -28,12 +31,127 @@
             color: #b7b7b7;
           }
         }
-        .imgBox {
-          max-width: 1200px;
+        .imgBoxOne {
           width: 100%;
+          max-width: 1200px;
           margin-bottom: 80px;
           img {
             width: 100%;
+          }
+        }
+        .imgBoxTwo {
+          display: none;
+        }
+        .imgBoxThree {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section1 {
+    background-color: #212121;
+    .container {
+      margin: auto;
+      .row {
+        .main {
+          padding-bottom: 131px;
+          .textBox {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .title {
+              width: 100%;
+              max-width: 660px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 70px;
+              line-height: 100%;
+              color: #ffffff;
+            }
+            .text {
+              margin-top: 20px;
+              width: 100%;
+              max-width: 360px;
+            }
+          }
+          .imgBoxOne {
+            display: none;
+          }
+          .imgBoxTwo {
+            display: block;
+            img {
+              width: 740px;
+              height: 375px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section1 {
+    background-color: #212121;
+    .container {
+      margin: auto;
+      width: 100%;
+      max-width: 360px;
+      .row {
+        .main {
+          padding-bottom: 60px;
+          .textBox {
+            width: 100%;
+            max-width: 360px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .title {
+              width: 100%;
+              max-width: 350px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 45px;
+              line-height: 100%;
+              /* or 45px */
+
+              color: #ffffff;
+            }
+            .text {
+              margin-top: 20px;
+              width: 100%;
+              max-width: 360px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 120%;
+              color: #b7b7b7;
+            }
+          }
+          .imgBoxOne {
+            display: none;
+          }
+          .imgBoxTwo {
+            display: none;
+            img {
+              width: 740px;
+              height: 375px;
+            }
+          }
+          .imgBoxThree {
+            display: block;
+            img {
+              width: 360px;
+              height: 182px;
+            }
           }
         }
       }

@@ -23,7 +23,7 @@
           width: 100%;
           display: grid;
           grid-template-columns: 380px 380px 380px;
-          justify-content: space-between;
+          column-gap: 30px;
           .left {
             border-top: 1px solid #444444;
             padding-top: 20px;
@@ -73,6 +73,35 @@
                 color: #1a1a1a;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section10 {
+    background-color: #212121;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          .titleBox {
+            .titleCard {
+              width: 100%;
+              padding-bottom: 40px;
+              max-width: 470px;
+            }
+          }
+          .registrationBox {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 360px 360px;
+            column-gap: 20px;
+            row-gap: 30px;
           }
         }
       }

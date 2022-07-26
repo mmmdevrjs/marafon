@@ -50,7 +50,7 @@ export default function Accardion(props) {
           </div>
         </div>
         <div className="accordion__content">
-          <div className="left">
+          <div className="acLeft">
             <p className="textTop">
               Tajribali mutaxassis har bir ishining amaliy ustasi bo‘lishi bilan
               birgalikda, nazariyani ham o‘zlashtirgan bo‘lishi juda muhim.
@@ -63,7 +63,7 @@ export default function Accardion(props) {
               tushunib (anglab) qilishi qanday yaxshi-a?!
             </p>
           </div>
-          <div className="right">
+          <div className="acRight">
             <ul>
               <li>01 — UX/UI dizayner kasbi haqida</li>
               <li>02 — UX/UI dizayner qobiliyatlari</li>
@@ -120,7 +120,7 @@ export default function Accardion(props) {
           </div>
         </div>
         <div className="accordion__content">
-          <div className="left">
+          <div className="acLeft">
             <p className="textTop">
               Tajribali mutaxassis har bir ishining amaliy ustasi bo‘lishi bilan
               birgalikda, nazariyani ham o‘zlashtirgan bo‘lishi juda muhim.
@@ -133,7 +133,7 @@ export default function Accardion(props) {
               tushunib (anglab) qilishi qanday yaxshi-a?!
             </p>
           </div>
-          <div className="right">
+          <div className="acRight">
             <ul>
               <li>01 — UX/UI dizayner kasbi haqida</li>
               <li>02 — UX/UI dizayner qobiliyatlari</li>
@@ -190,7 +190,7 @@ export default function Accardion(props) {
           </div>
         </div>
         <div className="accordion__content">
-          <div className="left">
+          <div className="acLeft">
             <p className="textTop">
               Tajribali mutaxassis har bir ishining amaliy ustasi bo‘lishi bilan
               birgalikda, nazariyani ham o‘zlashtirgan bo‘lishi juda muhim.
@@ -203,7 +203,7 @@ export default function Accardion(props) {
               tushunib (anglab) qilishi qanday yaxshi-a?!
             </p>
           </div>
-          <div className="right">
+          <div className="acRight">
             <ul>
               <li>01 — UX/UI dizayner kasbi haqida</li>
               <li>02 — UX/UI dizayner qobiliyatlari</li>
@@ -218,14 +218,17 @@ export default function Accardion(props) {
           </div>
         </div>
       </div>
-      <div className={`accordion ${showers ? "show" : ""}`}>
-        <div className="accordion__title" onClick={() => setShowers(!showers)}>
+      <div className={` accordion ${showers ? "show" : ""}`}>
+        <div
+          className="accordion__title border"
+          onClick={() => setShowers(!showers)}
+        >
           {showers ? (
-            <span className="brandColor">
+            <span className="brandColor ">
               01 — UX/UI dizayn va foydalanuvchi nazariyasi
             </span>
           ) : (
-            <span className="noBrandColor">
+            <span className="noBrandColor ">
               01 — UX/UI dizayn va foydalanuvchi nazariyasi
             </span>
           )}
@@ -260,7 +263,7 @@ export default function Accardion(props) {
           </div>
         </div>
         <div className="accordion__content">
-          <div className="left">
+          <div className="acLeft">
             <p className="textTop">
               Tajribali mutaxassis har bir ishining amaliy ustasi bo‘lishi bilan
               birgalikda, nazariyani ham o‘zlashtirgan bo‘lishi juda muhim.
@@ -273,7 +276,7 @@ export default function Accardion(props) {
               tushunib (anglab) qilishi qanday yaxshi-a?!
             </p>
           </div>
-          <div className="right">
+          <div className="acRight">
             <ul>
               <li>01 — UX/UI dizayner kasbi haqida</li>
               <li>02 — UX/UI dizayner qobiliyatlari</li>

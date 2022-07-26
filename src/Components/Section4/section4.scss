@@ -1,10 +1,12 @@
 .section4 {
   background-color: #1a1a1a;
   .container {
+    // margin: 0;
     .row {
       .main {
         width: 100%;
         .cardTitle {
+          width: 100%;
           max-width: 410px;
           margin-top: 120px;
           margin-bottom: 40px;
@@ -17,16 +19,18 @@
         }
         .cards {
           width: 100%;
-          margin-bottom: 90px;
+
           .cardBox {
+            width: 100%;
             border-top: 1px solid #444444;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 380px 380px 380px;
+            column-gap: 30px;
             padding-top: 30px;
             margin-bottom: 30px;
             .left {
               .title {
-                max-width: 380px;
+                width: 100%;
                 font-family: "SF Pro Display";
                 font-style: normal;
                 font-weight: 510;
@@ -36,8 +40,11 @@
               }
             }
             .middle {
+              display: grid;
+              width: 100%;
+              grid-template-columns: 100% 100%;
+              column-gap: 30px;
               .text {
-                max-width: 380px;
                 font-family: "SF Pro Display";
                 font-style: normal;
                 font-weight: 400;
@@ -57,6 +64,111 @@
                 line-height: 140%;
                 color: #b7b7b7;
               }
+            }
+          }
+          .cardBoxBottom {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #444444;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section4 {
+    .container {
+      .row {
+        .main {
+          .cardTitle {
+            max-width: 450px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+          }
+          .cards {
+            width: 100%;
+
+            .cardBox {
+              width: 100%;
+              border-top: 1px solid #444444;
+              display: grid;
+              grid-template-columns: 360px 360px;
+              column-gap: 20px;
+              padding-top: 20px;
+              margin-bottom: 30px;
+
+              .middle {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 100%;
+                column-gap: 0px;
+                row-gap: 20px;
+              }
+            }
+            .cardBoxBottom {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section4 {
+    .container {
+      .row {
+        .main {
+          .cardTitle {
+            max-width: 350px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            font-style: normal;
+            font-weight: 510;
+            font-size: 30px;
+            line-height: 110%;
+            color: #ffffff;
+          }
+          .cards {
+            width: 100%;
+
+            .cardBox {
+              width: 100%;
+              border-top: 1px solid #444444;
+              display: grid;
+              grid-template-columns: 360px;
+              column-gap: 20px;
+              padding-top: 20px;
+              margin-bottom: 30px;
+              .left {
+                .title {
+                  width: 100%;
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 510;
+                  font-size: 18px;
+                  line-height: 130%;
+                  color: #ffffff;
+                  margin-bottom: 30px;
+                }
+              }
+
+              .middle {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 100%;
+                column-gap: 0px;
+                row-gap: 20px;
+                .text {
+                  font-size: 16px;
+                }
+              }
+            }
+            .cardBoxBottom {
+              margin-bottom: 0;
             }
           }
         }

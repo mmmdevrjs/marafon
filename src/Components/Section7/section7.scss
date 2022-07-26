@@ -1,6 +1,7 @@
 .section7 {
   background-color: #1a1a1a;
   .container {
+    // margin: 0;
     .row {
       .main {
         width: 100%;
@@ -13,6 +14,7 @@
           justify-content: space-between;
           align-items: flex-end;
           .cardTitle {
+            width: 100%;
             max-width: 410px;
             font-family: "SF Pro Display";
             font-style: normal;
@@ -37,7 +39,6 @@
             cursor: pointer;
 
             svg {
-              // margin-bottom: 40px;
               fill: #ffbd39;
             }
           }
@@ -61,6 +62,7 @@
             .swiper-slide {
               padding: 0;
               margin: 0;
+              width: 380px;
               padding: 30px;
               background-color: #212121;
               text-align: start;
@@ -80,6 +82,44 @@
                 font-size: 18px;
                 line-height: 140%;
                 color: #b7b7b7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section7 {
+    background-color: #1a1a1a;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-top: 80px;
+          padding-bottom: 80px;
+
+          .textButton {
+            .cardTitle {
+              width: 100%;
+              max-width: 380px;
+            }
+          }
+          .slider7 {
+            position: relative;
+            max-width: 770px;
+            .swiper {
+              height: 350px;
+
+              .swiper-wrapper {
+                .swiper-slide {
+                  width: 350px !important;
+                  padding: 30px;
+                  background-color: #212121;
+                  text-align: start;
+                }
               }
             }
           }

@@ -12,6 +12,7 @@ import "./styles7.css";
 export default function Section5() {
   const [swiper, setSwiper] = useState(null);
   const [slideWidth, setSlideWidth] = useState(1200);
+  const [space, setSpace] = useState(30);
 
   const nexto = () => {
     swiper.slideNext();
@@ -67,6 +68,14 @@ export default function Section5() {
     }
   }, []);
 
+  useEffect(() => {
+    if (slideWidth >= 800 && slideWidth < 1199) {
+      setSpace(20);
+    } else if (slideWidth > 1200) {
+      setSpace(30);
+    }
+  });
+
   window.addEventListener("resize", () => {
     const header = document.getElementsByClassName("section5");
     if (header[0].clientWidth >= 1200) {
@@ -76,6 +85,8 @@ export default function Section5() {
       setSlideWidth(header[0].clientWidth);
     }
   });
+
+  // const spaceFunc = () => {};
 
   return (
     <div className="section7">
@@ -134,7 +145,7 @@ export default function Section5() {
               <Swiper
                 className="mySwiper"
                 slidesPerView={"auto"}
-                spaceBetween={30}
+                spaceBetween={space}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,

@@ -84,7 +84,7 @@ export default function Section10() {
                     {" "}
                     Kurs davomida ustoz Ismoil Safarov bilan jonli darslar
                   </li>
-                </ul>
+                </ul> 
                 <button className="registrationBtn">Ro‘yxatdan o‘tish →</button>
               </div>
             </div>

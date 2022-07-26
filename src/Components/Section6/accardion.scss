@@ -1,7 +1,7 @@
 .accordion {
   background-color: transparent;
   width: 100%;
-  max-width: 790px;
+  max-width: 100%;
   border-top: 1px solid #444444;
   .accordion__title {
     .brandColor {
@@ -20,6 +20,9 @@
       line-height: 24px;
       color: #ffffff;
     }
+  }
+  .border {
+    border-bottom: 1px solid #444444;
   }
 
   &__title {
@@ -44,12 +47,13 @@
     overflow: hidden;
     transition: 0.7s ease-in-out;
     background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    .left {
-      width: 100%;
-      max-width: 380px;
+    display: grid;
+    grid-template-columns: 380px 380px;
+    column-gap: 30px;
+    .acLeft {
+      width: 380px;
       .textTop {
+        width: 100%;
         max-width: 380px;
         font-family: "SF Pro Display";
         font-style: normal;
@@ -60,6 +64,7 @@
         margin-bottom: 20px;
       }
       .textBottom {
+        width: 100%;
         max-width: 380px;
         font-family: "SF Pro Display";
         font-style: normal;
@@ -69,9 +74,8 @@
         color: #b7b7b7;
       }
     }
-    .right {
-      width: 100%;
-      max-width: 380px;
+    .acRight {
+      width: 380px;
       margin-bottom: 30px;
       ul {
         margin-left: 15px;

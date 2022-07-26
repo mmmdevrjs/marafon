@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import Icon from "../Icon/Icon";
 export default function Navbar() {
   return (
@@ -9,22 +10,61 @@ export default function Navbar() {
           <nav className="nav">
             <div className="menuLinks">
               <div className="logo">
-                <NavLink to="/">
+                <Link
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  {" "}
                   <Icon.Logo />
-                </NavLink>
+                </Link>
               </div>
               <ul className="menu">
                 <li>
-                  <NavLink to="/course">Kurs haqida</NavLink>
+                  <Link
+                    to="/course"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    Kurs haqida
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/service">Kurs o‘quv dasturi</NavLink>
+                  <Link
+                    to="/service"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Kurs o‘quv dasturi
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/design">O‘quvchilar fikri </NavLink>
+                  <Link
+                    to="/design"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    O‘quvchilar fikri{" "}
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/design">Ustoz haqida</NavLink>
+                  <Link
+                    to="/design"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    Ustoz haqida
+                  </Link>
                 </li>
               </ul>
             </div>

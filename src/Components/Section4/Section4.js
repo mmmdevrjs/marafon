@@ -8,6 +8,8 @@ export default function Section4() {
           <div className="main">
             <p className="cardTitle">Darslar qanday tartibda o‘tiladi?</p>
             <div className="cards">
+
+              
               <div className="cardBox">
                 <div className="left">
                   <p className="title">
@@ -20,8 +22,6 @@ export default function Section4() {
                     Telegram guruhlariga qo‘shamiz. Sizni vazifalar guruhi va
                     umumiy Chat guruhlariga a’zo qilamiz.
                   </p>
-                </div>
-                <div className="right">
                   <p className="text">
                     Vazifalar guruhida faqat vazifalar, darsliklar, dars
                     materiallari va foydali manbalar berib boriladi. Chat
@@ -30,6 +30,9 @@ export default function Section4() {
                   </p>
                 </div>
               </div>
+
+
+
               <div className="cardBox">
                 <div className="left">
                   <p className="title">
@@ -43,8 +46,6 @@ export default function Section4() {
                     beriladi. Videodarslarni socially.design platformamiz orqali
                     o‘rganasiz.
                   </p>
-                </div>
-                <div className="right">
                   <p className="text">
                     Videodarslarni o‘rganish bilan bir vaqtda amaliyotlarni ham
                     bajarib borasiz.
@@ -62,15 +63,13 @@ export default function Section4() {
                     Kurs 1 oyga mo‘ljallangan bo‘lib, sizga 1.5 oy o‘rganish
                     uchun dostup beriladi.
                   </p>
-                </div>
-                <div className="right">
                   <p className="text">
                     Shu muddat ichida videodarslarni o‘zingizga qulay vaqtda
                     o‘rganishingiz va qaytadan takroran ko‘rishingiz mumkin.
                   </p>
                 </div>
               </div>
-              <div className="cardBox">
+              <div className="cardBox cardBoxBottom">
                 <div className="left">
                   <p className="title">
                     04 — Kurs yakunida Ismoil Safarov bilan Live Chat’larda
@@ -83,8 +82,6 @@ export default function Section4() {
                     vazifalari beriladi va kurs yakunida imtihon loyihasi vazifa
                     qilib beriladi.
                   </p>
-                </div>
-                <div className="right">
                   <p className="text">
                     Kurs yakunida ustoz Ismoil Safarov bilan dizayner sifatida
                     faoliyat yuritish mavzularida Live Chat’lar tashkil

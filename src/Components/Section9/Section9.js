@@ -1,5 +1,6 @@
 import React from "react";
 import Teacher from "../../assets/images/Teacher.png";
+import TeacherTablet from "../../assets/images/TeacherTablet.png";
 
 export default function Section9() {
   return (
@@ -13,6 +14,9 @@ export default function Section9() {
             <div className="aboutTeacher">
               <div className="left">
                 <img src={Teacher} alt="" />
+              </div>
+              <div className="leftTablet">
+                <img src={TeacherTablet} alt="" />
               </div>
               <div className="right">
                 <div className="line"></div>

@@ -29,7 +29,7 @@ export default function Section3() {
                   UX/UI dizayn mutaxassislarni tarbiyalash.
                 </p>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </div>

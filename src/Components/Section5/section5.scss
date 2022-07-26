@@ -1,10 +1,13 @@
 .section5 {
   background-color: #1a1a1a;
   .container {
+    // margin: 0;
     .row {
       .main {
         width: 100%;
-        margin-bottom: 120px;
+        padding-bottom: 120px;
+        padding-top: 120px;
+
         .cardTitle {
           max-width: 410px;
           font-family: "SF Pro Display";
@@ -41,6 +44,7 @@
           .text {
             margin-top: 40px;
             margin-bottom: 40px;
+            width: 100%;
             max-width: 600px;
             font-family: "SF Pro Display";
             font-style: normal;
@@ -76,6 +80,191 @@
                 font-size: 18px;
                 line-height: 140%;
                 color: #b7b7b7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section5 {
+    background-color: #1a1a1a;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-bottom: 80px;
+          padding-top: 80px;
+
+          .cardTitle {
+            width: 100%;
+            max-width: 450px;
+          }
+          .textButton {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .next {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              svg {
+                fill: #ffbd39;
+                margin-bottom: 40px;
+              }
+            }
+            .prev {
+              background-color: transparent;
+              border: none;
+              margin-right: 28px;
+              cursor: pointer;
+
+              svg {
+                margin-bottom: 40px;
+                fill: #ffbd39;
+              }
+            }
+            .text {
+              margin-top: 40px;
+              margin-bottom: 40px;
+              width: 100%;
+              max-width: 562px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 130%;
+              color: #b7b7b7;
+            }
+          }
+          .slider {
+            width: 100%;
+            max-width: 770px;
+            position: relative;
+            .swiper {
+              .swiper-slide {
+                padding: 0;
+                margin: 0;
+                padding: 30px;
+                background-color: #212121;
+                max-width: 350px;
+                text-align: start;
+                .slideTitle {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 590;
+                  font-size: 24px;
+                  line-height: 100%;
+                  color: #ffffff;
+                  margin-bottom: 10px;
+                }
+                .slideText {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 140%;
+                  color: #b7b7b7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section5 {
+    background-color: #1a1a1a;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-bottom: 60px;
+          padding-top: 60px;
+
+          .cardTitle {
+            width: 100%;
+            max-width: 360px;
+            font-style: normal;
+            font-weight: 510;
+            font-size: 30px;
+            line-height: 110%;
+          }
+          .textButton {
+            display: grid;
+            justify-content: none;
+            align-items: none;
+
+            .buttons {
+              text-align: end;
+              .next {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                svg {
+                  fill: #ffbd39;
+                  margin-bottom: 20px;
+                }
+              }
+              .prev {
+                background-color: transparent;
+                border: none;
+                margin-right: 28px;
+                cursor: pointer;
+
+                svg {
+                  margin-bottom: 20px;
+                  fill: #ffbd39;
+                }
+              }
+            }
+            .text {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              width: 100%;
+              max-width: 562px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 130%;
+              color: #b7b7b7;
+            }
+          }
+          .slider {
+            width: 100%;
+            max-width: 360px;
+            position: relative;
+            .swiper {
+              .swiper-slide {
+                padding: 0;
+                margin: 0;
+                padding: 30px;
+                background-color: #212121;
+                max-width: 330px;
+                text-align: start;
+                .slideTitle {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 590;
+                  font-size: 24px;
+                  line-height: 100%;
+                  color: #ffffff;
+                  margin-bottom: 10px;
+                }
+                .slideText {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 140%;
+                  color: #b7b7b7;
+                }
               }
             }
           }

@@ -9,33 +9,37 @@ export default function Footer() {
             <div className="left">
               <p>© Socially Design Academy — Barcha huquqlar himoyalangan.</p>
             </div>
-            <div className="middle">
-              <li>
-                <a href="https://www.youtube.com/c/sociallyuz">YouTube </a>
-                <span className="liner">/</span>
-              </li>
-              <li>
-                <a href="https://socially.design/">Teletype</a>
-                <span className="liner">/</span>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/sociallyuz/"
-                  className="nextA"
-                >
-                  Instagram
+            <div className="rightBoxes">
+              <div className="middleBox">
+                <div className="middle">
+                  <li>
+                    <a href="https://www.youtube.com/c/sociallyuz">YouTube </a>
+                    <span className="liner">/</span>
+                  </li>
+                  <li>
+                    <a href="https://socially.design/">Teletype</a>
+                    <span className="liner">/</span>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/sociallyuz/"
+                      className="nextA"
+                    >
+                      Instagram
+                    </a>
+                    <span className="liner">/</span>
+                  </li>
+                  <li>
+                    <a href="https://t.me/sociallyuz">Telegram</a>
+                  </li>
+                </div>
+              </div>
+              <div className="right">
+                <span>by</span>
+                <a href="https://www.instagram.com/sociallyuz/">
+                  Socially Design Agency
                 </a>
-                <span className="liner">/</span>
-              </li>
-              <li>
-                <a href="https://t.me/sociallyuz">Telegram</a>
-              </li>
-            </div>
-            <div className="right">
-              <span>by</span>
-              <a href="https://www.instagram.com/sociallyuz/">
-                Socially Design Agency
-              </a>
+              </div>
             </div>
           </div>
         </div>

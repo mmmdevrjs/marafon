@@ -22,12 +22,15 @@
         .aboutTeacher {
           display: grid;
           grid-template-columns: 790px 380px;
-          justify-content: space-between;
+          column-gap: 30px;
           .left {
             img {
               width: 100%;
               max-width: 790px;
             }
+          }
+          .leftTablet {
+            display: none;
           }
           .right {
             position: relative;
@@ -92,6 +95,53 @@
           .right:hover .line::before {
             background-color: #ffbd39;
             transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1199px) {
+  .section9 {
+    background-color: #1a1a1a;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          .titleBox {
+            .titleCard {
+              width: 100%;
+              padding-bottom: 40px;
+              max-width: 380px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 40px;
+              line-height: 110%;
+              color: #ffffff;
+            }
+          }
+          .aboutTeacher {
+            display: grid;
+            grid-template-columns: 360px 360px;
+            column-gap: 20px;
+            .left {
+              display: none;
+              img {
+                width: 100%;
+                max-width: 790px;
+              }
+            }
+            .leftTablet {
+              display: block;
+              img {
+                width: 360px;
+                height: 375px;
+              }
+            }
           }
         }
       }

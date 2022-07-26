@@ -11,7 +11,8 @@ import "./styles.css";
 
 export default function Section5() {
   const [swiper, setSwiper] = useState(null);
-  const [slideWidth, setSlideWidth] = useState(1200);
+  const [slideWidth, setSlideWidth] = useState(1260);
+  const [space, setSpace] = useState(30);
 
   const nexto = () => {
     swiper.slideNext();
@@ -66,6 +67,14 @@ export default function Section5() {
       setSlideWidth(header[0].clientWidth);
     }
   }, []);
+
+  useEffect(() => {
+    if (slideWidth >= 300 && slideWidth < 1199) {
+      setSpace(20);
+    } else if (slideWidth > 1200) {
+      setSpace(30);
+    }
+  });
 
   window.addEventListener("resize", () => {
     const header = document.getElementsByClassName("section5");
@@ -139,8 +148,8 @@ export default function Section5() {
               <Swiper
                 className="mySwiper"
                 slidesPerView={"auto"}
-                spaceBetween={30}
-                autoplay={{  
+                spaceBetween={space}
+                autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
