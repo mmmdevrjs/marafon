@@ -63,7 +63,7 @@ export default function Section5() {
     if (header[0].clientWidth >= 1200) {
       setSlideWidth((header[0].clientWidth - 1200) / 2 + 1200);
     }
-    if (header[0].clientWidth > 576 && header[0].clientWidth < 1200) {
+    if (header[0].clientWidth > 300 && header[0].clientWidth < 1200) {
       setSlideWidth(header[0].clientWidth);
     }
   }, []);
@@ -83,7 +83,7 @@ export default function Section5() {
     if (header[0].clientWidth >= 1200) {
       setSlideWidth((header[0].clientWidth - 1200) / 2 + 1200);
     }
-    if (header[0].clientWidth > 576 && header[0].clientWidth < 1200) {
+    if (header[0].clientWidth > 300 && header[0].clientWidth < 1200) {
       setSlideWidth(header[0].clientWidth);
     }
   });

@@ -63,13 +63,13 @@ export default function Section5() {
     if (header[0].clientWidth >= 1200) {
       setSlideWidth((header[0].clientWidth - 1200) / 2 + 1200);
     }
-    if (header[0].clientWidth > 576 && header[0].clientWidth < 1200) {
+    if (header[0].clientWidth > 300 && header[0].clientWidth < 1200) {
       setSlideWidth(header[0].clientWidth);
     }
   }, []);
 
   useEffect(() => {
-    if (slideWidth >= 800 && slideWidth < 1199) {
+    if (slideWidth >= 300 && slideWidth < 1199) {
       setSpace(20);
     } else if (slideWidth > 1200) {
       setSpace(30);
@@ -81,7 +81,7 @@ export default function Section5() {
     if (header[0].clientWidth >= 1200) {
       setSlideWidth((header[0].clientWidth - 1200) / 2 + 1200);
     }
-    if (header[0].clientWidth > 576 && header[0].clientWidth < 1200) {
+    if (header[0].clientWidth > 300 && header[0].clientWidth < 1200) {
       setSlideWidth(header[0].clientWidth);
     }
   });
