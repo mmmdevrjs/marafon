@@ -130,3 +130,69 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section6 {
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-top: 60px;
+          padding-bottom: 60px;
+          .title {
+            padding-bottom: 40px;
+            .cardTitle {
+              width: 100%;
+              max-width: 350px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 30px;
+              line-height: 110%;
+              color: #ffffff;
+            }
+          }
+          .content {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .left {
+              width: 100%;
+              max-width: 360px;
+            }
+            .rightBox {
+              border-top: 3px solid #444444;
+              width: 100%;
+              max-width: 360px;
+              height: auto;
+              margin-top: 30px;
+              background-color: #272727;
+              .container {
+                padding: 30px;
+                .contentBox {
+                  ul {
+                    li {
+                      font-size: 16px;
+                    }
+                  }
+                  .registration {
+                    font-size: 16px;
+                  }
+                }
+                .titleBox {
+                  .titleText {
+                    width: 100%;
+                    max-width: 300px;
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -71,7 +71,9 @@ export default function Section5() {
   useEffect(() => {
     if (slideWidth >= 300 && slideWidth < 1199) {
       setSpace(20);
+      console.log("true");
     } else if (slideWidth > 1200) {
+      console.log("false");
       setSpace(30);
     }
   });

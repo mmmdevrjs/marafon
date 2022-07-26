@@ -76,3 +76,25 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .navbar {
+    display: none;
+    .container {
+      .row {
+        .nav {
+          .menuLinks {
+            .logo {
+              margin-right: 20px;
+            }
+            .menu {
+              display: grid;
+              grid-template-columns: auto auto auto auto auto;
+              column-gap: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -128,3 +128,73 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section7 {
+    background-color: #1a1a1a;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-top: 60px;
+          padding-bottom: 60px;
+
+          .textButton {
+            display: grid;
+            margin-bottom: 0px;
+            .buttons {
+              margin-top: 20px;
+              text-align: end;
+              .next {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                svg {
+                  fill: #ffbd39;
+                  margin-bottom: 20px;
+                }
+              }
+              .prev {
+                background-color: transparent;
+                border: none;
+                margin-right: 28px;
+                cursor: pointer;
+
+                svg {
+                  margin-bottom: 20px;
+                  fill: #ffbd39;
+                }
+              }
+            }
+            .cardTitle {
+              width: 100%;
+              max-width: 350px;
+              font-family: "SF Pro";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 30px;
+              line-height: 110%;
+              color: #ffffff;
+            }
+          }
+          .slider7 {
+            position: relative;
+            max-width: 360px;
+            .swiper {
+              height: 330px;
+
+              .swiper-wrapper {
+                .swiper-slide {
+                  width: 330px;
+                  padding: 30px;
+                  background-color: #212121;
+                  text-align: start;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

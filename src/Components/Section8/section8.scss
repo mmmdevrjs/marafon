@@ -410,3 +410,227 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section8 {
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          padding-top: 60px;
+          padding-bottom: 60px;
+
+          .btnShow {
+            display: none;
+          }
+          .hideBtn {
+            display: none;
+          }
+          .title {
+            display: none;
+          }
+          .bigBox {
+            display: none;
+          }
+
+          .titleCards {
+            margin-bottom: 20px;
+            display: grid;
+            justify-content: space-between;
+            align-items: flex-end;
+            .cardTitle {
+              width: 100%;
+              max-width: 350px;
+              font-family: "SF Pro Display";
+              font-style: normal;
+              font-weight: 510;
+              font-size: 30px;
+              line-height: 110%;
+              /* or 33px */
+
+              color: #ffffff;
+            }
+            .buttons {
+              margin-top: 20px;
+              text-align: end;
+              .next {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                svg {
+                  // margin-bottom: 40px;
+                  fill: #ffbd39;
+                }
+              }
+              .prev {
+                background-color: transparent;
+                border: none;
+                margin-right: 28px;
+                cursor: pointer;
+
+                svg {
+                  // margin-bottom: 40px;
+                  fill: #ffbd39;
+                }
+              }
+              .text {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                max-width: 600px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                color: #b7b7b7;
+              }
+            }
+          }
+
+          .buttons {
+            display: block;
+          }
+
+          .slider {
+            display: block;
+            max-width: 360px;
+            position: relative;
+            .swiper {
+              height: 100%;
+              .swiper-slide {
+                width: 100%;
+                max-width: 330px;
+                padding: 0;
+                margin: 0;
+                padding: 0px;
+                background-color: #212121;
+                text-align: start;
+
+                .box1 {
+                  position: relative;
+                  z-index: 0;
+                  background-color: #212121;
+                  padding: 30px;
+                  margin-bottom: 0px;
+                  width: 100%;
+                  max-width: 380px;
+
+                  .line {
+                    width: 100%;
+                    height: 3px;
+                    background-color: #444444;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    &::before {
+                      content: "";
+                      width: 100%;
+                      height: 3px;
+                      background-color: #444444;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      transition: all 0.6s;
+                      transform: scale(0);
+                      transform-origin: left;
+                    }
+                  }
+                  .top {
+                    display: grid;
+                    grid-template-columns: 40px auto;
+                    column-gap: 10px;
+                    margin-bottom: 20px;
+                    .imgBox {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      img {
+                        border-radius: 50%;
+                        border: 1px solid #444444;
+                        width: 40px;
+                        height: 40px;
+                      }
+                    }
+                    .namesBox {
+                      .name {
+                        font-family: "SF Pro Display";
+                        font-style: normal;
+                        font-weight: 510;
+                        font-size: 18px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: flex-end;
+                        color: #ffffff;
+                      }
+                      .neeck {
+                        font-family: "SF Pro Display";
+                        font-style: normal;
+                        font-weight: 274;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: flex-end;
+                        color: #b7b7b7;
+                      }
+                    }
+                  }
+                  .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    .text {
+                      font-family: "SF Pro Display";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 140%;
+                      color: #b7b7b7;
+                    }
+                    .nextText1 {
+                      font-family: "SF Pro Display";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 140%;
+                      color: #b7b7b7;
+                    }
+                    .nextText2 {
+                      font-family: "SF Pro Display";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 140%;
+                      color: #b7b7b7;
+                    }
+                  }
+                }
+                .box1:hover .line::before {
+                  background-color: #ffbd39;
+                  transform: scale(1);
+                }
+
+                .slideTitle {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 590;
+                  font-size: 24px;
+                  line-height: 100%;
+                  color: #ffffff;
+                  margin-bottom: 10px;
+                }
+                .slideText {
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 140%;
+                  color: #b7b7b7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

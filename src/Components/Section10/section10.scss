@@ -108,3 +108,67 @@
     }
   }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 739px) {
+  .section10 {
+    background-color: #212121;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+      .row {
+        .main {
+          width: 100%;
+          .titleBox {
+            .titleCard {
+              width: 100%;
+              padding-bottom: 40px;
+              max-width: 360px;
+              font-weight: 510;
+              font-size: 30px;
+              line-height: 110%;
+            }
+          }
+          .registrationBox {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 360px;
+            column-gap: 20px;
+            row-gap: 30px;
+            .left {
+              .title {
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 510;
+                font-size: 18px;
+                line-height: 130%;
+                color: #ffbd39;
+              }
+              ul {
+                margin-left: 30px;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                max-width: 360px;
+                li {
+                  max-width: 320px;
+                  font-family: "SF Pro Display";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 130%;
+                  color: #b7b7b7;
+                }
+                .nextLi {
+                  max-width: 320px;
+                  margin: 10px 0;
+                }
+              }
+              .registrationBtn {
+                max-width: 300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
